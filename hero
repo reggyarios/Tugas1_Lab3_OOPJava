@@ -1,0 +1,32 @@
+class hero {
+    String nama;
+    int hp;
+    int mana;
+    int att;
+    int def;
+    String weapon;
+        hero (String nama, int hp, int mana, int att, int def,String weapon){
+             this.nama= nama;
+            this.hp = hp;
+            this.mana = mana;
+            this.att = att;
+            this.def= def;
+            this.weapon = weapon;
+    }
+
+    void print(){
+        System.out.println("Nickname : "+nama);
+        System.out.println("HP       : "+hp);
+        System.out.println("Mana     : "+mana);
+        System.out.println("Attack   : "+att);
+        System.out.println("Defense  : "+def);
+        System.out.println("Weapon   : "+weapon);
+    }
+}
+
+public class Main {
+     public static void main (String[]orgs){
+     hero hero1 = new hero ("Lenn", 100, 98, 20, 10, "Excalibur");
+     hero1.print();
+     }
+ }
